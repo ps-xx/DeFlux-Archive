@@ -1,0 +1,17 @@
+{
+  "name": "deflux-launcher",
+  "version": "0.1.0",
+  "private": true,
+  "description": "DeFlux NUI host — local WebSocket bridge and static UI assets",
+  "main": "host/index.js",
+  "scripts": {
+    "start": "node host/index.js",
+    "nui": "node host/index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}

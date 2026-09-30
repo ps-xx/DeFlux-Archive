@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <!-- Import after Microsoft.Cpp.Default.props so VCTargetsPath / DefaultPlatformToolset exist. -->
+  <PropertyGroup>
+    <DeFluxPlatformToolset Condition="'$(DeFluxPlatformToolset)' == '' and Exists('$(VCTargetsPath)\Platforms\x64\PlatformToolsets\v143\Toolset.props')">v143</DeFluxPlatformToolset>
+    <DeFluxPlatformToolset Condition="'$(DeFluxPlatformToolset)' == ''">$(DefaultPlatformToolset)</DeFluxPlatformToolset>
+    <PlatformToolset>$(DeFluxPlatformToolset)</PlatformToolset>
+  </PropertyGroup>
+</Project>

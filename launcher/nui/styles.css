@@ -1,0 +1,66 @@
+:root {
+  --bg: #0e1218;
+  --fg: #e8eef7;
+  --muted: #8b9bb0;
+  --accent: #3dd6c6;
+  --line: #243041;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  background:
+    radial-gradient(1200px 600px at 10% -10%, #1a2738 0%, transparent 55%),
+    radial-gradient(900px 500px at 100% 0%, #142028 0%, transparent 50%),
+    var(--bg);
+  color: var(--fg);
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+.shell {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  letter-spacing: 0.04em;
+}
+
+.tag {
+  margin: 8px 0 28px;
+  color: var(--muted);
+}
+
+#status {
+  color: var(--accent);
+}
+
+button {
+  appearance: none;
+  border: 1px solid var(--line);
+  background: #172131;
+  color: var(--fg);
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  border-color: var(--accent);
+}
+
+#log {
+  margin-top: 20px;
+  padding: 16px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  white-space: pre-wrap;
+  min-height: 120px;
+}

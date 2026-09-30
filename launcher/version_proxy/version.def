@@ -1,0 +1,12 @@
+LIBRARY version
+EXPORTS
+    GetFileVersionInfoA = DeFlux_GetFileVersionInfoA
+    GetFileVersionInfoW = DeFlux_GetFileVersionInfoW
+    GetFileVersionInfoSizeA = DeFlux_GetFileVersionInfoSizeA
+    GetFileVersionInfoSizeW = DeFlux_GetFileVersionInfoSizeW
+    VerQueryValueA = DeFlux_VerQueryValueA
+    VerQueryValueW = DeFlux_VerQueryValueW
+    GetFileVersionInfoExA = DeFlux_GetFileVersionInfoExA
+    GetFileVersionInfoExW = DeFlux_GetFileVersionInfoExW
+    GetFileVersionInfoSizeExA = DeFlux_GetFileVersionInfoSizeExA
+    GetFileVersionInfoSizeExW = DeFlux_GetFileVersionInfoSizeExW

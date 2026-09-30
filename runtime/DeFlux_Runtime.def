@@ -1,0 +1,17 @@
+LIBRARY DeFlux_Runtime
+EXPORTS
+    deflux_runtime_query_abi
+    deflux_runtime_initialize
+    deflux_runtime_shutdown
+    deflux_runtime_get_status
+    deflux_runtime_result_string
+    deflux_runtime_state_string
+    deflux_runtime_research_substate
+    deflux_runtime_research_controller_identity
+    deflux_runtime_research_harness_async_shutdown_test
+    deflux_runtime_research_harness_async_failure_shutdown_test
+    deflux_runtime_research_bootstrap_complete
+    deflux_runtime_research_harness_auto_stop_stress_test
+    deflux_runtime_research_harness_async_shutdown_stress_test
+    deflux_runtime_research_harness_async_failure_stress_test
+    deflux_runtime_research_harness_lifecycle_breadcrumb_smoke

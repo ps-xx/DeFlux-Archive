@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <!-- Legacy research runtime. Explicit opt-in only; deploy from here, never beside M1 exes. -->
+  <PropertyGroup Label="DeFluxOutputBoundary">
+    <OutDir>$(SolutionDir)build\bin\$(Configuration)\legacy\</OutDir>
+    <IntDir>$(SolutionDir)build\obj\$(Configuration)\legacy\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+</Project>

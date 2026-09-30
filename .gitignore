@@ -1,0 +1,94 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.VC.db
+*.VC.db-shm
+*.VC.db-wal
+*.VC.VC.opendb
+*.aps
+*.ncb
+*.opendb
+*.opensdf
+*.sdf
+*.cachefile
+ipch/
+*.ipch
+_UpgradeReport_Files/
+UpgradeLog*.XML
+UpgradeLog*.htm
+
+# Build outputs (any directory named build/, Debug/, Release/, x64/, Win32/)
+x64/
+Win32/
+Debug/
+Release/
+build/
+[Bb]in/
+[Oo]bj/
+*.obj
+*.o
+*.lib
+*.a
+*.dll
+*.exe
+*.exp
+*.ilk
+*.pdb
+*.idb
+*.iobj
+*.ipdb
+*.tlog
+*.log
+*.lastbuildstate
+*.recipe
+*.unsuccessfulbuild
+*.binlog
+*.sarif
+*.pch
+*.gch
+*.sbr
+*.bsc
+*.res
+*.embed.manifest
+*.intermediate.manifest
+*.pgc
+*.pgd
+*.rsp
+
+# Generated ASI Loader twin of DeFluxCore.dll (post-build copy)
+*.asi
+
+# Runtime / local game-side backups created by the launcher
+*.deflux_bak
+
+# Node.js / Launcher NUI
+node_modules/
+npm-debug.log*
+yarn-error.log*
+package-lock.json
+dist/
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local / secrets
+.env
+.env.*
+*.local
+
+# Intentionally NOT ignored:
+# - C++ / JS / HTML / CSS source
+# - Visual Studio projects and solution (*.sln, *.vcxproj, *.props, *.def)
+# - Directory.Build.props / DeFlux.Toolset.props
+# - vendor/ third-party source (including MinHook headers/stubs)
+# - launcher/assets (DeFlux_clean.sav, blank_intro.mp4)
+# - shared protocol headers

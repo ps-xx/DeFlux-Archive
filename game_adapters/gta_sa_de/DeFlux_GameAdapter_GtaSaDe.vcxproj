@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{A11F01D0-0001-4000-8000-000000000011}</ProjectGuid>
+    <RootNamespace>DeFlux_GameAdapter_GtaSaDe</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="$(DeFluxRoot)DeFlux.Toolset.props" />
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+
+  <Import Project="$(DeFluxRoot)DeFlux.Output.M1.props" />
+  <PropertyGroup>
+    <TargetName>DeFlux_GameAdapter_GtaSaDe</TargetName>
+  </PropertyGroup>
+
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;$(SolutionDir)foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+  </ItemDefinitionGroup>
+
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;$(SolutionDir)foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+  </ItemDefinitionGroup>
+
+  <ItemGroup>
+    <ClInclude Include="include\deflux\game\gta_sa_de\adapter.hpp" />
+    <ClInclude Include="include\deflux\game\gta_sa_de\behavioral_transform_research.hpp" />
+    <ClInclude Include="include\deflux\game\gta_sa_de\grounded_transform_research.hpp" />
+    <ClInclude Include="include\deflux\game\gta_sa_de\grounded_live_research.hpp" />
+    <ClInclude Include="include\deflux\game\gta_sa_de\detection.hpp" />
+    <ClInclude Include="include\deflux\game\gta_sa_de\gworld_discovery_research.hpp" />
+    <ClInclude Include="include\deflux\game\gta_sa_de\gworld_semantic_analysis.hpp" />
+    <ClInclude Include="include\deflux\game\gta_sa_de\gworld_identity_analysis.hpp" />
+    <ClInclude Include="include\deflux\game\gta_sa_de\ggame_state_observation.hpp" />
+    <ClInclude Include="include\deflux\game\gta_sa_de\legacy_chain_diagnostic.hpp" />
+    <ClInclude Include="include\deflux\game\gta_sa_de\local_player_semantic_research.hpp" />
+    <ClInclude Include="include\deflux\game\gta_sa_de\in_process_research.hpp" />
+    <ClInclude Include="include\deflux\game\gta_sa_de\passive_same_process_read.hpp" />
+    <ClInclude Include="include\deflux\game\gta_sa_de\research_build_allowlist.hpp" />
+    <ClInclude Include="include\deflux\game\gta_sa_de\research_launcher_preflight.hpp" />
+    <ClInclude Include="include\deflux\game\gta_sa_de\research_launcher.hpp" />
+    <ClInclude Include="include\deflux\game\gta_sa_de\research_remote_loader.hpp" />
+    <ClInclude Include="include\deflux\game\gta_sa_de\research_intent.hpp" />
+    <ClInclude Include="include\deflux\game\gta_sa_de\research_evidence_log.hpp" />
+    <ClInclude Include="include\deflux\game\gta_sa_de\research_activation_status.hpp" />
+    <ClInclude Include="include\deflux\game\gta_sa_de\research_synthetic_activation.hpp" />
+    <ClInclude Include="include\deflux\game\gta_sa_de\gworld_live_observation.hpp" />
+    <ClInclude Include="include\deflux\game\gta_sa_de\qualification.hpp" />
+    <ClInclude Include="src\detection_internal.hpp" />
+    <ClInclude Include="src\environment_preflight.hpp" />
+    <ClInclude Include="src\discovery.hpp" />
+    <ClInclude Include="src\fingerprint.hpp" />
+    <ClInclude Include="src\gworld_discovery.hpp" />
+    <ClInclude Include="src\module_query.hpp" />
+    <ClInclude Include="src\observation.hpp" />
+    <ClInclude Include="src\pe_image.hpp" />
+    <ClInclude Include="src\process_query.hpp" />
+    <ClInclude Include="src\remote_read.hpp" />
+    <ClInclude Include="src\sha256.hpp" />
+    <ClInclude Include="src\supported_builds.hpp" />
+    <ClInclude Include="src\win_utf8.hpp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ClCompile Include="src\adapter.cpp" />
+    <ClCompile Include="src\behavioral_transform_research.cpp" />
+    <ClCompile Include="src\grounded_transform_research.cpp" />
+    <ClCompile Include="src\grounded_live_research.cpp" />
+    <ClCompile Include="src\detection.cpp" />
+    <ClCompile Include="src\discovery.cpp" />
+    <ClCompile Include="src\environment_preflight.cpp" />
+    <ClCompile Include="src\fingerprint.cpp" />
+    <ClCompile Include="src\gworld_discovery.cpp" />
+    <ClCompile Include="src\gworld_discovery_research.cpp" />
+    <ClCompile Include="src\gworld_semantic_analysis.cpp" />
+    <ClCompile Include="src\gworld_identity_analysis.cpp" />
+    <ClCompile Include="src\ggame_state_observation.cpp" />
+    <ClCompile Include="src\legacy_chain_diagnostic.cpp" />
+    <ClCompile Include="src\local_player_semantic_research.cpp" />
+    <ClCompile Include="src\in_process_research.cpp" />
+    <ClCompile Include="src\passive_same_process_read.cpp" />
+    <ClCompile Include="src\research_build_allowlist.cpp" />
+    <ClCompile Include="src\research_launcher_preflight.cpp" />
+    <ClCompile Include="src\research_launcher.cpp" />
+    <ClCompile Include="src\research_remote_loader.cpp" />
+    <ClCompile Include="src\research_intent.cpp" />
+    <ClCompile Include="src\research_evidence_log.cpp" />
+    <ClCompile Include="src\research_activation_status.cpp" />
+    <ClCompile Include="src\research_synthetic_activation.cpp" />
+    <ClCompile Include="src\gworld_live_observation.cpp" />
+    <ClCompile Include="src\gworld_structural_identity_probe.cpp" />
+    <ClCompile Include="src\module_query.cpp" />
+    <ClCompile Include="src\observation.cpp" />
+    <ClCompile Include="src\pe_image.cpp" />
+    <ClCompile Include="src\process_query.cpp" />
+    <ClCompile Include="src\qualification.cpp" />
+    <ClCompile Include="src\remote_read.cpp" />
+    <ClCompile Include="src\sha256.cpp" />
+    <ClCompile Include="src\supported_builds.cpp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\foundation\DeFlux_Foundation.vcxproj">
+      <Project>{A11F01D0-0001-4000-8000-000000000010}</Project>
+    </ProjectReference>
+  </ItemGroup>
+
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

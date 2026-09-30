@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <!-- M1 clean runtime boundary. Never colocate with legacy version.dll / DeFluxCore. -->
+  <PropertyGroup Label="DeFluxOutputBoundary">
+    <OutDir>$(SolutionDir)build\bin\$(Configuration)\m1\</OutDir>
+    <IntDir>$(SolutionDir)build\obj\$(Configuration)\m1\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+</Project>
